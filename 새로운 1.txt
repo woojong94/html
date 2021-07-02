@@ -55,3 +55,18 @@ img - 이미지를 불러오는 태그
  -상대경로
   현재파일이 위치한 경로 기준으로 상대적인 경로
    img/banner1.jpg
+   
+   
+ div
+ span
+ 
+ 시멘틱 태그 - 태그의 역할,위치 등을 알 수 있음
+ <header></header>
+ <nav></nav>
+ <footer></footer>
+ <address></address>
+ 
+ 양식 태그
+ <form>
+	<input type="text"> -글 형태로
+ </form>
