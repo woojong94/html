@@ -1,0 +1,174 @@
+양식태그
+<form>
+	데이터 입력
+	<input type>
+</form>
+
+
+단일선택: ex> 남or여
+
+
+form
+	*method- 양식의 데이터를 전송하는 방식
+		-GET
+			- URL 형태로 전송이 되는 데이터(브라우저 주소창에 노출)
+			- 브라우저 주소창에 입력하는 문자 갯수의 제한
+			  (전송할 데이터의 용량이 제한이 있다)
+		-POST
+			- 브라우저 주소창에 노출이 되지 않는 데이터
+			- 내부적으로 처리(용량의 제한이 비교적 덜 하다)
+			- 많은 데이터 전송시 사용
+			- 예)파일을 전송 시 -enctype="multipart/form-data"
+	*action- 양식 데이터를 전송할 URL
+	
+	target- 전송할 창
+	enctype-
+	
+	
+input, select, textarea
+데이터를 찾을 수 있는 속성 - name
+기본값을 지정하는 속성 - value
+
+radio, checkbox ->값을 선택하는 속성 checked
+
+select에서 값을 선택하는 속성 -> selected(option 태그에 정의)
+
+
+textarea
+	- rows  영역을 몇줄 만큼 늘릴 것인지
+	- cols  영역을 몇칸 만큼 늘릴 것인지
+	
+input
+	type- 버튼관련 타입
+	submit(양식제출)|button(일반버튼)|reset(양식취소)
+	
+placeholder- 안내문구	
+
+
+
+
+브라우저 - 자바스크립트 해석기
+(자바스크립트 런타임)
+
+자바스크립트
+-사용자와 상호작용
+
+자바스크립트 코어 소스(ECMAScript)
+브라우저 관련 소스(브라우저에만 있는 소스)
+
+
+
+
+경계선
+글꼴 색상
+배경색
+
+1.색상명
+red, blue, green,yellow
+
+2.RGB
+  (RED    GREEN   BLUE)
+  (0~255)(0~255)(0~255)
+  255*255*255*
+  
+3.HEX 코드(16진수 코드)
+  RED-
+	RGB  255, 0, 0
+	16진수 ff 00 00
+	(0~10,a, b, c, d, e, f)
+	#ff0000
+	
+4.RGBA
+	A- 알파채널(투명도) 0~1 
+		0에 가까울수록 투명, 1에 가까울수록 불투명
+		
+		
+		
+align- 가로정렬(left, center, right)
+valign- 수직정렬(top, mid, bottom)
+
+
+&nbsp;- 공백 1개
+&amp;- &
+&lt;- <(특수문자)
+&gt;- >(특수문자)
+
+
+a-
+	- href 링크이동
+	- target 이동할 창
+		_self 현재 창(기본값)
+		_balnk 새 창
+		
+		내부 창의 name 값
+		
+내부 창은 같은 페이지 하부의 iframe
+
+padding- 내부여백
+margin- 외부여백
+
+
+table
+	th, td
+			rowspan- 행 병합
+			colsapn- 열 병합
+			
+			
+img
+	src- 이미지 경로
+	width
+	height
+	alt- alternative text(대체문구)
+	
+	
+../ - 상위 폴더로 이동
+
+
+form- 양식, 신청서
+
+<form></form>
+
+method -전송방식(GET, POST)
+<a href='/goods_list?cateCd=032%brandCd=001'></a>
+	쿼리스트링 - ?이하는 데이터
+	
+action -양식 데이터를 처리할 URL
+enctype -파일을 업로드 할때
+	(enctype='multipart/form-data')
+	
+target -
+		-_self(현재창)
+		-_balnk(새창)
+		-내부창의 name 속성 값
+		
+그룹화 태그
+<fieldset>
+	<legend>그룹 제목</legend>
+</fieldset>
+
+<label></label> 
+id- checkbox, radio
+for- label
+
+
+select
+
+multiple- 여러개 선택 가능
+size- 한번에 노출할 갯수의
+특정 option을 선택 할때 - Selected
+
+
+type
+	-submit 양식 제출 버튼
+	-button 일반적인 버튼
+	-reset 양식 취소 버튼
+	
+<input type='submit|button|reset' value='버튼명'>
+
+<button type='submit|button|reset'>버튼명</button>
+
+type
+	-image 제출 버튼(이미지 제출버튼-submit과 동일한 기능)
+	 + src 속성 추가 -> 이미지 경로
+	 
+<input type='image' src='이미지 경로'>
