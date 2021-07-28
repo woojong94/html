@@ -1,0 +1,59 @@
+text-decoration
+	- none
+	- underline
+	- italic
+	
+
+text-indent
+	- 들여쓰기
+		ex) text-indent: 10px만큼
+			-> 좌에서 우로 10px만큼 들여쓰기
+			
+
+text-overflow
+	- ellipsis	(생략 표시인 ...을 추가)
+	- 생략되는 글 요소가 너비를 가져야함
+	- 글 개행 속성이 없어야함
+
+		- 아래 속성이 선행되어야함
+		
+			white-space 로 먼저 나열을 한 후 ellipsis 사용
+				- nowrap	줄 개행 안함
+				- wrap	줄 개행
+				
+			overflow: hidden	->넘치는 부분을 가림
+			
+			
+			
+			
+			
+가상 클래스 선택자
+	1.상태
+		input[type='checkbox']:checked	체크가 되어있는 상태를 선택
+			- :이 들어간다.
+		
+		select option:selected	선택이 되어있는 상태를 선택
+		input[type='text']:read-only	읽기 전용 상태를 선택
+		div:hover	마우스를 올린 상태
+		div:not('선택자')		div 중에서 선택자가 없는 상태
+		div:not('first')	div 중에서 first 클래스가 없는 요소를 선택	
+	
+	2.가상의 요소를 추가하고 선택
+		:after	자식의 마지막 요소로 추가하여 선택
+		:before	자식의 처음 요소로 추가하여 선택
+		
+			-inline 속성
+			-content: '내용' or ''
+			
+		ex)		
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<div style='clear: left;'></div>
+			</ul>
+			
+			
+			
+			

@@ -1,0 +1,79 @@
+overflow (양방향)
+	- hidden 넘치는 영역을 감출때
+	- scroll 스크롤바 생성
+	- auto 자동으로 넘치면 스크롤바 생성, 평소엔 스크롤바 X
+	
+overflow-x (좌우방향)
+		- hidden
+		- scroll
+		- auto
+		
+overflow-y (상하방향)
+		- hidden
+		- scroll
+		- auto
+		
+		
+
+전환 효과
+	사이즈, 색상, 위치 등이 변화될 때 효과
+	(애니메이션 효과)
+	
+	transition
+		- transition-property CSS 속성
+		- transition-duration 전환효과 진행 시간
+		- transition-timing-function 애니메이션 효과
+			ease (기본값)
+				ease-in, ease-out, ease-in-out
+			linear 일정 속도로 전환
+		- transition-delay 전환효과가 적용되기 전 대기 시간	
+		
+축약
+	transition: CSS 속성 duration(전환효과 시간) 애니메이션 효과 delay(전환 대기 시간)
+		ex) transition: width 2s ease-in-out 2s, height 2s ease-in-out 2s;
+		ex)	transition: all 2s ease-in-out 2s;
+		
+		
+미디어 쿼리
+	- 장비 화면 사이즈에 따라서 적용되는 CSS를 구별해주는 구간
+	
+@media all(장비명칭) and (max(min)-widthL: 구간px) {
+	// 구간에 따라서 적용될 CSS
+}
+
+	ex) body:after {
+				clear: left;
+				content:'';
+				display: block;
+			}
+			
+			@media all and (max-width: 700px) {
+				.box {
+					width: calc(100%/2);
+					border-color: blue;
+				}
+			}
+			
+			@media all and (max-width: 500px) {
+				.box {
+					width: 100%;
+					border-color: orange;
+				}
+			}
+			
+			
+			
+user-scalable=yes|no
+	- 사용자의 확대, 축소 가능 여부
+initial-scale=1.0
+	- 처음 로딩 사이즈 (1- 장비 사이즈와 동일, 1이상- 확대, 1미만- 축소)
+maximum-scale=5.0
+	- 사용자가 최대한 확대할 수 있는 사이즈 비율(1 위로 축소 가능)
+minimum-scale=0.5
+	- 사용자가 최대한 축소할 수 있는 사이즈 비율(1 아래로 축소 가능)
+width=device-width
+	- device-width 화면을 장비의 물리적 너비(width)로
+	- 없다면 해상도 기준
+	
+		ex) <meta name='viewport' content='user=scalable=yes,initial-scale=1.0,
+			minimum-scale=0.5,maximum-scale=2.0,width=device-width'>

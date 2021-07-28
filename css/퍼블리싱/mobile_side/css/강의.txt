@@ -1,0 +1,100 @@
+text-decoration
+		- none 기본값
+		- underline 밑줄
+		- italic 기울임
+		
+list-style
+	ul태그 li의 스타일
+		disk, circle, square 등
+		none - 스타일 없음
+		
+cursor
+	- 마우스를 올렸을 때 화살표 모양
+		- pointer 손가락 모양
+		- hand
+		
+		
+border: 1px solid red; // 모든 방향
+		- border-top	상단 경계선
+		- border-bottom	하단 경계선
+		- border-left	왼쪽 경계선
+		- border-right	오른쪽 경계선
+		
+		
+height 높이
+	min-height 최소 높이
+	max-height 최대 높이
+width 너비
+	min-width 최소 너비
+	max-width 최대 너비
+	
+	
+	
+<aside class='on' di='menu'></asdie>
+
+	aside.on {       ->띄어쓰기 X 본인이 가지고있는 on 속성
+	
+	}
+
+	aside#menu {
+	
+	}
+	
+
+margin
+	- auto 양방향 균등 여백
+	- margin: 0 auto;
+		좌우 균등 여백- 가운데 정렬
+		
+text-transform
+		- uppercase	(소문자 -> 대문자)
+		- lowercase	(대문자 -> 소문자)
+		
+		
+		
+line-height를 height와 같게하면 가운데로 옴
+	ex) .site_top {
+		height: 30px;
+		background-color: #f9f9f9;
+		text-align: right;
+	}
+
+		.site_top a {
+		font-size: 12px;
+		letter-spacing: -0.24px;
+		color: #333333;
+		padding: 0 10px;
+		line-height: 30px;
+	}
+	
+	
+
+vertical-align
+	- 수직 정렬
+		- top
+		- middle
+		- bottom
+		
+		
+background: 색상(생략 가능), 이미지, 반복, 위치
+	
+	반복
+		no-repeat	반복 없음
+		repeat-x	좌 -> 우
+		repeat-y	상 -> 하
+		
+	위치
+		left|center|right		top|center|bottom
+		
+		100px 좌 -> 우 이동		100px 위 -> 아래 이동
+
+nth-child(수식)
+3n+1 
+	->1, 4, 7, 10
+3n+2	
+	->2, 5, 8, 11
+3n+3
+	->3, 6, 9, 12
+
+		+?가 안나오면 n은 1부터
+		+?가 나오면 n은 0부터

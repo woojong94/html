@@ -1,0 +1,30 @@
+opacity
+	- 투명도(0~1)
+		0에 가까울 수록 투명.
+		1에 가까울 수록 불투명
+		
+box-shadow
+	- 요소에 그림자 효과
+		좌에서 , 위에서 아래, 번짐 정도(blur), 색상
+			ex) box-shadow: 0px 2px 4px #000000
+			ex) .box_shadow {
+					width: 200px;
+					height: 200px;
+					box-shadow: 2px 2px 15px #212121;
+					background-color: orange;
+					opacity: 0.5;
+				}
+				
+
+first-child	자식중 첫번째
+last-child		자식중 마지막
+
+
+word-break
+	- break-all	텍스트 자동 줄 개행
+	
+background-size
+	- cover	영역 자동 맞춤
+
+
+margin: 45px 0 50px;
